@@ -2,10 +2,7 @@ using System;
 
 namespace LogisticaTransportadora.Models
 {
-    /// <summary>
-    /// Colaborador responsável pelo transporte de cargas pesadas em carreta.
-    /// Herda de FuncionarioTransporte.
-    /// </summary>
+    
     public class MotoristaCarreta : FuncionarioTransporte
     {
         private string _placaCarreta = string.Empty;
@@ -26,10 +23,7 @@ namespace LogisticaTransportadora.Models
 
         public double CapacidadeCargaToneladas { get; private set; }
 
-        /// <summary>
-        /// Invoca o construtor da classe pai com base e complementa com os
-        /// atributos próprios do motorista de carreta.
-        /// </summary>
+       
         public MotoristaCarreta(
             string nome,
             string registro,
@@ -43,10 +37,7 @@ namespace LogisticaTransportadora.Models
             CapacidadeCargaToneladas = capacidadeCargaToneladas;
         }
 
-        /// <summary>
-        /// Sobrescreve o método da classe base para exibir as particularidades
-        /// operacionais do transporte rodoviário de carga.
-        /// </summary>
+
         public override void MostrarDetalhes()
         {
             Console.WriteLine("Função........: Motorista de Carreta");

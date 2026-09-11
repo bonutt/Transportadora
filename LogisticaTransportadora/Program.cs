@@ -16,8 +16,7 @@ namespace LogisticaTransportadora
 
             FrotaService frota = new FrotaService();
 
-            // Instâncias das classes derivadas.
-            // Obs.: new FuncionarioTransporte(...) não compila — a classe é abstrata.
+            
             frota.Cadastrar(new MotoristaCarreta(
                 nome: "Carlos Eduardo Ramos",
                 registro: "mt-1001",
@@ -48,7 +47,7 @@ namespace LogisticaTransportadora
                 entregasPorDia: 38,
                 regiaoAtendimento: "Centro - Osasco/SP"));
 
-            // Chamada polimórfica: mesma assinatura, comportamentos diferentes.
+            
             frota.ListarDetalhes();
 
             ConsoleUI.Rodape($"Total de colaboradores cadastrados: {frota.TotalColaboradores}");

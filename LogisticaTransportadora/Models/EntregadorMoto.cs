@@ -2,10 +2,7 @@ using System;
 
 namespace LogisticaTransportadora.Models
 {
-    /// <summary>
-    /// Colaborador responsável pelas entregas rápidas de última milha em motocicleta.
-    /// Herda de FuncionarioTransporte.
-    /// </summary>
+    
     public class EntregadorMoto : FuncionarioTransporte
     {
         private string _placaMoto = string.Empty;
@@ -28,10 +25,7 @@ namespace LogisticaTransportadora.Models
 
         public string RegiaoAtendimento { get; private set; }
 
-        /// <summary>
-        /// Invoca o construtor da classe pai com base e complementa com os
-        /// atributos próprios do entregador de moto.
-        /// </summary>
+        
         public EntregadorMoto(
             string nome,
             string registro,
@@ -47,10 +41,7 @@ namespace LogisticaTransportadora.Models
             RegiaoAtendimento = regiaoAtendimento;
         }
 
-        /// <summary>
-        /// Sobrescreve o método da classe base para exibir as particularidades
-        /// operacionais da entrega de última milha.
-        /// </summary>
+        
         public override void MostrarDetalhes()
         {
             Console.WriteLine("Função........: Entregador de Moto");
